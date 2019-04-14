@@ -12,6 +12,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Bugly.setIsDevelopmentDevice(this, true);
         // 这里实现SDK初始化，appId替换成你的在Bugly平台申请的appId
         // 调试时，将第三个参数改为true
         Bugly.init(this, "17675e5a98", true);
